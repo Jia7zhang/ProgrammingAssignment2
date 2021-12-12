@@ -2,6 +2,10 @@
 
 ## makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
 ## 
+## Put comments here that give an overall description of what your
+## functions do
+
+## Write a short comment describing this function
 rm(list = ls())
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL 
@@ -33,5 +37,6 @@ cacheSolve <- function(x, ...) {
   data <- x$get()
   m <- solve(data, ...)
   x$setInverse(m)
+  x$Inverse(m)
   m
 }
